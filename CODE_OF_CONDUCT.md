@@ -1,3 +1,3 @@
 # Code of Conduct
 
-As part of the Rands Leadership Slack community, the [Rands Leadership Slack Code of Conduct](https://github.com/randsleadershipslack/documents-and-resources/blob/master/code-of-conduct.md) applies to this project.
+As part of the Dev Edmonton Society community, the [Dev Edmonton Society Code of Conduct](https://devedmonton.com/code_of_conduct) applies to this project.
