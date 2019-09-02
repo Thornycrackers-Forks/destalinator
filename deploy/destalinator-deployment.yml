@@ -1,0 +1,30 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: destalinator
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: destalinator
+        tier: backend
+    spec:
+      containers:
+      - name: destalinator
+        image: thornycrackers/destalinator
+        env:
+        - name: DESTALINATOR_SB_TOKEN
+          valueFrom:
+            secretKeyRef:
+              name: destalinator-secret
+              key: destalinator-sb-token
+        - name: DESTALINATOR_API_TOKEN
+          valueFrom:
+            secretKeyRef:
+              name: destalinator-secret
+              key: destalinator-api-token
+        - name: DESTALINATOR_RUN_ONCE
+          value: 'true'
+        - name: DESTALINATOR_ACTIVATED
+          value: 'false'

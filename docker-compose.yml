@@ -6,7 +6,7 @@ services:
       dockerfile: ./Dockerfile
     network_mode: "bridge"
     container_name: destalinator
-    image: devedmonton/destalinator
+    image: thornycrackers/destalinator
     ports:
       - "8000"
     volumes:
